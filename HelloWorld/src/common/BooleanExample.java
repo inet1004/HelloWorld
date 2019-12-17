@@ -13,5 +13,6 @@ public class BooleanExample {
 			else
 				System.out.println(var1 + "=>거짓 경우");
 		}
+		System.out.println("qq");
 	}
 }
