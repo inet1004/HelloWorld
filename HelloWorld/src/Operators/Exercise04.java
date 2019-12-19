@@ -7,5 +7,6 @@ public class Exercise04 {
 			int num2=(int)(Math.random()*6) +1;
 			
 			System.out.println(num1,num2);
+			
 	}
 }
