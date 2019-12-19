@@ -12,7 +12,10 @@ public class ForMultiplicationTableExample {
 					System.out.print("*** " + p + "단 ***");
 				}
 			}
-			for (n = 1; n <= 9; n++) {
+
+			System.out.println(" ");
+			
+			for (n = 2; n <= 9; n++) {
 				for (m=1;m<10;m++) {
 					if (m<9) {
 						System.out.print(n + " x " + m + " = " + (m * n) + ", ");
@@ -21,7 +24,8 @@ public class ForMultiplicationTableExample {
 					}
 				}
 			}		
-	}}
+	}
+}
 
 //			for (n = 1; n <= 9; n++) {
 //					if(p<9) {
