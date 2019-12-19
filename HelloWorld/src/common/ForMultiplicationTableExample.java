@@ -13,7 +13,7 @@ public class ForMultiplicationTableExample {
 				}
 			}
 
-			System.out.println(" ");
+			System.out.println("");
 			
 			for (n = 2; n <= 9; n++) {
 				for (m=1;m<10;m++) {
