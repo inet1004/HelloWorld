@@ -7,6 +7,7 @@ public class ContinueExample {
 				continue;
 			}
 			System.out.println(i);
+			System.out.println(i);
 		}
 	}
 }
