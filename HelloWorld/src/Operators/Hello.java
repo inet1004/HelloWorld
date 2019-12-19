@@ -1,4 +1,4 @@
-package common;
+package Operators;
 
 /*
  * Hello 프로그램 ver 0.1
@@ -13,6 +13,6 @@ public class Hello {
 		// System.out.println("Hello,World!!");
 		char age=100; // 나이 출력
 		
-		System.out.println("내 나이는 " + age +" 입니다.");
+		System.out.println("내 나이는 " + age +" ===입니다.");
 	}
 }
