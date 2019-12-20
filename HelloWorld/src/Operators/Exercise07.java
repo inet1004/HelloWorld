@@ -31,6 +31,7 @@ public class Exercise07 {
 			} else if (menu == 4) {
 				run = false;
 				System.out.println("프로그램 종료");
+				System.out.println("프로그램 종료");
 			}
 		}
 	}
