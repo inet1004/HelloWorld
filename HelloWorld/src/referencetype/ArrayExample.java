@@ -49,19 +49,19 @@ public class ArrayExample {
 //		}
 //		
 
-//		int[] numm = new int[25];
-//		int summ = 0;
-//		double avg = 0;
-//		for (int yy = 0; yy < numm.length; yy++) {
-//			numm[yy]=yy+1;
-//			summ += numm[yy];
-//			if((numm.length)%5==0) {
-//				System.out.println(summ +", ");
-//			}else {System.out.print(summ +", ");
-//			}
-//			avg = summ /numm.length;	
-//		}
-//		System.out.println("avg= " + avg);
+		int[] numm = new int[25];
+		int summ = 0;
+		double avg = 0;
+		for (int yy = 0; yy < numm.length; yy++) {
+			numm[yy]=yy+1;
+			summ += numm[yy];
+			if((numm.length)%5==0) {
+				System.out.println(summ +", ");
+			}else {System.out.print(summ +", ");
+			}
+			avg = summ /numm.length;	
+		}
+		System.out.println("avg= " + avg);
 		
 		
 		
