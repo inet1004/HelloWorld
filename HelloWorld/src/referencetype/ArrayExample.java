@@ -24,17 +24,17 @@ public class ArrayExample {
 //				sum2 += mAry[m];
 //		System.out.println(sum2);
 //		
-//		int w=0;
-//		int[] qAry = new int[25];
-//		for(int v=0; v<5; v++) {
-//			for(int t=0; t<5; t++) {
-//				w += 1;
-//				qAry[(w-1)] = w;
-//				if(w%5==0) { System.out.println(w);
-//				} else {System.out.print(w+", ");
-//				}
-//			}
-//		}
+		int w=0;
+		int[] qAry = new int[25];
+		for(int v=0; v<5; v++) {
+			for(int t=0; t<5; t++) {
+				w += 1;
+				qAry[(w-1)] = w;
+				if(w%5==0) { System.out.println(w);
+				} else {System.out.print(w+", ");
+				}
+			}
+		}
 //		
 //		System.out.println("============");
 //		
