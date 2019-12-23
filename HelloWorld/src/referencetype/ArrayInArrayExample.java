@@ -25,7 +25,7 @@ public class ArrayInArrayExample {
 				int result=intAry[t][s];
 				System.out.print(result + ", ");
 			}
-			System.out.println();System.out.println();
+			System.out.println();
 		}
 	}
 }
