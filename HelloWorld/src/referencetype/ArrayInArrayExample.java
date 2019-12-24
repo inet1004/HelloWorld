@@ -13,19 +13,37 @@ public class ArrayInArrayExample {
 //					System.out.print(intAry[i][j] + ", ");
 //				m++;
 
-		int[][] intAry = new int[5][4];
+//		int[][] intAry = new int[5][4];
+//		int t, s;
+//		int m = 1;
+//		for (t=0; t < 5; t++) {
+//			for (s=0; s < 4; s++) {
+//				intAry[t][s] = m;
+//				System.out.print("m= " + m + ", ");
+//				System.out.print("t= " + t + ", s= " +s + ",        ");
+//				m++;
+//				int result=intAry[t][s];
+//				System.out.print(result + ", ");
+//			}
+//			System.out.println();
+//		}
+		
+		
+		int[][] intAry = new int[5][5];
+		int m = 1, n=1;
 		int t, s;
-		int m = 1;
 		for (t=0; t < 5; t++) {
-			for (s=0; s < 4; s++) {
-				intAry[t][s] = m;
-				System.out.print("m= " + m + ", ");
-				System.out.print("t= " + t + ", s= " +s + ",        ");
-				m++;
-				int result=intAry[t][s];
-				System.out.print(result + ", ");
+			for (s=0; s < 5; s++) {
+				m=intAry[s][t] = n+(s*5);
+				System.out.print( m + ", ");
+//				System.out.print("s" + s + ", t" + t + ",  ");
+				int result=intAry[s][t];
 			}
-			System.out.println();
+			n++;
+			System.out.println("");
 		}
+		
+		
+		
 	}
 }
