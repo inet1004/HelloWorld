@@ -5,6 +5,10 @@ public class Account {
 	private String owner;
 	private String balance;
 	
+	Account(){
+		
+	}
+	
 	public Account(String ano, String owner, String balance) {
 		this.ano=ano;
 		this.owner=owner;

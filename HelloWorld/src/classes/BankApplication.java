@@ -29,5 +29,44 @@ public class BankApplication {
 		}
 		System.out.println("프로그램 종료");
 	}
+	
 	// 계좌생성하기
+	private static void createAccount() {
+		Account[] accAry=new Account[5];
+		System.out.println("계좌번호 입력: ");
+		static Scanner acc = new Scanner(System.in);
+		String id = acc.nextLine();
+		mem.setAno(id);
+
+		
+
+	}
+	
+	// 계좌목록 보기
+	private static void accountList() {
+		// TODO Auto-generated method stub
+
+	}
+	
+	// 예금하기
+	private static void deposit() {
+		// TODO Auto-generated method stub
+
+	}
+	
+	// 출금하기
+	private static void withdraw() {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	//Account 배열에서 ano와 동일한 Account 객체 찾기
+	private static void findAccount(String ano) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	
 }
