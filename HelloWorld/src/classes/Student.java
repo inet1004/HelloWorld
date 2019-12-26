@@ -27,7 +27,7 @@ public class Student {
 		System.out.println("공부한다.");
 	}
 	void basketBall() {
-		System.out.println("농구한다.");
+		System.out.println(studentName + "가 농구한다.");
 	}
 	void sleep() {
 		System.out.println("잠을 잔다.");

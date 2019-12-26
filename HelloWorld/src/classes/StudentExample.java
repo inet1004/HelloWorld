@@ -22,6 +22,8 @@ public class StudentExample {
 		
 		Student student1=new Student("Yedam","921111-1111","박철수");
 		student1.introduce();
+		student.basketBall();
+		student1.basketBall();
 //		System.out.println(student.major);
 //		student.doHomework();
 		
