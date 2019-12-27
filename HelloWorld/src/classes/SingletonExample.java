@@ -13,7 +13,7 @@ public class SingletonExample {
 		Singleton singleton2=Singleton.getInstance();
 		
 		if(singleton==singleton2) {
-			System.out.println("동일객체");
+			System.out.println("동일객체"); // 항상 이값이 나옴
 		}else {
 			System.out.println("다른 객체");
 		}
