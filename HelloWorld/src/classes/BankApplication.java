@@ -46,7 +46,7 @@ public class BankApplication {
 		int balance = scn.nextInt();
 
 		Account acnt = new Account(ano, owner, balance);
-		for (int i = 0; i > accountArray.length; i++) {
+		for (int i = 0; i < accountArray.length; i++) {
 			if (accountArray[i] == null) {
 				accountArray[i] = acnt;
 				break;
@@ -74,6 +74,7 @@ public class BankApplication {
 		Account accnt = findAccount(ano);
 		int balance = accnt.getBalance();
 		accnt.setBalance(balance + amount);
+		System.out.println(accnt.getBalance());
 	}
 
 	// 출금하기
@@ -84,7 +85,12 @@ public class BankApplication {
 		int amount=scn.nextInt();
 		Account accnt = findAccount(ano);
 		int balance = accnt.getBalance();
+		if(balance<amount) {
+			System.out.println("잔액이 부족, 종료합니다.");
+			return;
+		}
 		accnt.setBalance(balance - amount);
+		System.out.println(accnt.getBalance());
 	}
 
 	// Account 배열에서 ano와 동일한 Account 객체 찾기
