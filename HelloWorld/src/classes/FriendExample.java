@@ -3,6 +3,11 @@ package classes;
 import java.util.Scanner;
 
 public class FriendExample {
+
+	static Scanner scn = new Scanner(System.in);
+
+	static Friend[] fArray = new Friend[5];
+
 	public static void main(String[] args) {
 //		
 //		Friend[] fArray=new Friend[5];
@@ -36,12 +41,6 @@ public class FriendExample {
 //		
 //		
 
-		Friend[] fArray = new Friend[5];
-		UnivFriend[] uArray = new UnivFriend[5];
-		ComFriend[] cArray = new ComFriend[5];
-
-		Scanner scn = new Scanner(System.in);
-
 		boolean run = true;
 		while (run) {
 			System.out.println("===============================");
@@ -49,22 +48,21 @@ public class FriendExample {
 			System.out.println("===============================");
 			System.out.println("선택> ");
 			int selectNo = scn.nextInt();
-			scn.nextLine();
 
 			if (selectNo == 1) {
 				// 계좌 생성
-				System.out.println("대학:1");
-				System.out.println("회사:2");
-				System.out.println("기타:3");
+				System.out.println("기타:1");
+				System.out.println("대학:2");
+				System.out.println("회사:3");
 				int cate = scn.nextInt();
-				if(cate==1) {
+				if (cate == 1) {
 					createFriend(1);
-				}else if(cate==2) {
+				} else if (cate == 2) {
 					createFriend(2);
-				}else{
+				} else {
 					createFriend(3);
 				}
-					
+
 			} else if (selectNo == 2) {
 				// 계좌 목록
 				findFriend();
@@ -82,50 +80,8 @@ public class FriendExample {
 	// 계좌생성하기
 	static void createFriend(int cate) {
 		
-		if(cate==1) {
-			
-		}
-		
-		System.out.println("이름: ");
-		String name = scn.nextLine();
-		System.out.println("연락처: ");
-		String phone = scn.nextLine();
-
-		if (UnivFriend) {
-			System.out.println("학교: ");
-			String univ = scn.nextLine();
-			System.out.println("전공: ");
-			String major = scn.nextInt();
-			
-			Friend acnt = new Friend(name, phone, univ, major);
-			for (int i = 0; i < uArray.length; i++) {
-				if (uArray[i] == null) {
-					uArray[i] = acnt;
-				break;
-			}
-		}else if (ComFriend) {
-			System.out.println("회사: ");
-			String company = scn.nextLine();
-			System.out.println("부서: ");
-			String dept = scn.nextInt();
-			
-			Friend acnt = new Friend(name, phone, company, dept);
-			for (int i = 0; i < cArray.length; i++) {
-				if (cArray[i] == null) {
-					cArray[i] = acnt;
-					break;
-			}
-			}
-		}else {
-			Friend acnt = new Friend(name, phone, company, dept);
-			for (int i = 0; i < fArray.length; i++) {
-				if (fArray[i] == null) {
-					fArray[i] = acnt;
-					break;
-				}
-			}
-		}
 	}
+
 
 	// 계좌목록 보기
 	static void findFriend() {
@@ -139,10 +95,11 @@ public class FriendExample {
 
 	// 예금하기
 	static void listFriend() {
-		System.out.println("이름 입력: ");
-		String name = scn.nextLine();
-		Account accnt = findFriendAccount(name);
-		System.out.println(accnt.getName());
+		for(Friend fList:fArray) {
+			if (fList!=null) {
+				System.out.println(fList);
+			}
+		}
 	}
 
 	// Account 배열에서 ano와 동일한 Account 객체 찾기

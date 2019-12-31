@@ -3,11 +3,22 @@ package classes;
 public class Friend {
 	private String name;
 	private String phone;
+	
+	public Friend (){
+	}
 
 	public Friend(String name, String phone) {
 		super();
 		this.name = name;
 		this.phone = phone;
+	}
+	
+	public Friend(String name, String phone, String univ, String major) {
+		super();
+		this.name = name;
+		this.phone = phone;
+		this.name = univ;
+		this.phone = major;
 	}
 
 	public String getName() {
