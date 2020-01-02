@@ -12,7 +12,8 @@ public class FriendExample {
 		while (run) {
 			
 			mainMenu();
-			int selectNo = scn.nextInt();
+			int selectNo = scn.nextInt(); 
+			scn.nextLine(); // Int 다음에 꼭 필요함
 			if (selectNo == 1) {
 				addFriend();
 			} else if (selectNo == 2) {
@@ -35,6 +36,7 @@ public class FriendExample {
 		
 		subMenu();
 		int selectNo = scn.nextInt();
+		scn.nextLine();
 		scn.nextLine();
 		if (selectNo == 1) {
 			friend = createFriend();
@@ -116,10 +118,10 @@ public class FriendExample {
 
 	public static void searchFriend() {
 
-	    Scanner scan = new Scanner(System.in); // 왜 이렇게 따로 다시 정의해 주어야 하나???
+//	    Scanner scan = new Scanner(System.in); // 왜 이렇게 따로 다시 정의해 주어야 하나???
 	    
 		System.out.print("조회할 이름 입력:");
-		String name = scan.nextLine();
+		String name = scn.nextLine();
 		for (Friend fnd : fArray) {
 			if (fnd != null && fnd.getName().equals(name)) {
 				System.out.println(fnd);
